@@ -10,7 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
+import project1 from "../images/mern-stack.jpg";
 import project2 from "../images/html-css-javascript.jpg";
 import project3 from "../images/javascript-fullstack.jpg";
 import project4 from "../images/mern-stack.jpg";
@@ -30,15 +30,12 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Amazon Clone",
+    description: `Full stack project for Ecommerce and online store development based off of Amazon's store platform. Project utilizes ReactJs, Express, Mongodb, and Nodejs with Redux  `,
     image: project1,
   },
   {
-    name: "Project 2",
+    name: "Mixology",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
@@ -46,7 +43,7 @@ const projects = [
     image: project2,
   },
   {
-    name: "Project 3",
+    name: "Cryptocurrency Trading Bot",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
@@ -54,7 +51,7 @@ const projects = [
     image: project3,
   },
   {
-    name: "Project 4",
+    name: "Critika",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
@@ -62,7 +59,7 @@ const projects = [
     image: project4,
   },
   {
-    name: "Project 5",
+    name: "Beat Saber clone",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
@@ -70,7 +67,7 @@ const projects = [
     image: project5,
   },
   {
-    name: "Project 6",
+    name: "Escape the Dungeon",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\

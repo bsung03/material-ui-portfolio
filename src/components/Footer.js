@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     "& .MuiSvgIcon-root": {
       fill: "tan",
       "&:hover": {
-        fill: "tomato",
+        fill: "#8f4f49",
         fontSize: "1.8rem",
       },
     },
