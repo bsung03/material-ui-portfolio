@@ -114,6 +114,30 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
+        Education
+      </Typography>
+
+ 
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Purdue University
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Bachelor's in Computer Science          
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Focus in software engineering and web development
+          </Typography>
+
+
+      <Typography variant="h4" align="center" className={classes.heading}>
         Experience
       </Typography>
       <Box component="div" className={classes.timeLine}>
