@@ -10,12 +10,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/mern-stack.jpg";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import project1 from "../images/react-redux.jpg";
+import project2 from "../images/Mixology.jpg";
+import project3 from "../images/Cryptocurrency_Trading_bot.jpg";
+import project4 from "../images/Critika.png";
+import project5 from "../images/food.jpg";
+import project6 from "../images/unity-engine.jpeg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -31,48 +31,38 @@ const useStyles = makeStyles((theme) => ({
 const projects = [
   {
     name: "Amazon Clone",
-    description: `Full stack project for Ecommerce and online store development based off of Amazon's store platform. Project utilizes ReactJs, Express, Mongodb, and Nodejs with Redux  `,
+    description: `Full stack project for Ecommerce and online store development based off of Amazon's store platform. (ReactJs with Redux, Express, Mongodb, and Nodejs)  `,
     image: project1,
+    github: "https://github.com/bsung03/Amazon-Clone"
   },
   {
     name: "Mixology",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Full stack web application utilizing machine learning to help users find cocktail recipes they might likefor the ingredients they currently have. (ReactJS, MongoDB, Python, Javascript, HTML, CSS)`,
     image: project2,
+    github: "https://github.com/bsung03/mixology_2.0"
   },
   {
     name: "Cryptocurrency Trading Bot",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Trading bot utilizing deep learning to predict cryptocurrency prices and using theCoinbase API to make strategic trades to maximize profits and minimize losses (Python, Tensorflow, Keras)`,
     image: project3,
   },
   {
     name: "Critika",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Full Stack web application where individuals can get feedback on a desired medium and have equal visibility relative to other users (Angular, NodeJs, MongoDB, Express, Heroku)`,
     image: project4,
+    github: "https://github.com/keithatan/Critika"
   },
   {
-    name: "Beat Saber clone",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "ML-galago-recipe-rater",
+    description: `Machine learning algorithm for predicting ratings users would give to certain food recipes based on what they already like, using collaborative filtering and various clustering methods (Python)`,
     image: project5,
+    github: "https://github.com/bsung03/ML-galago-recipe-rater"
   },
   {
     name: "Escape the Dungeon",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `2D top down dungeon crawler game developed in Unity to create scripts for movement,combat, level progression and all other game mechanics (Unity2D, C#)`,
     image: project6,
+    github: "https://github.com/bsung03/Escape-the-Dungeon"
   },
 ];
 
@@ -102,12 +92,13 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
+                {
+                  project.github && (
+                    <Button size="small" color="primary">
+                      <a href={project.github}>Github</a>
+                    </Button>
+                  )
+                }
               </CardActions>
             </Card>
           </Grid>
